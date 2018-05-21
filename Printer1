@@ -1,0 +1,241 @@
+Magic Software Enterprises Ltd                        M A G I C   Version  8.30
+
+ System : (FN)  Fogás napló                                     Date : 19/11/2017
+   Page :   1     Table Repository                              Time : 11:47:40
+
+ +-#--+------ Name --------+Columns+Indexes+Size+- DB table -+--- Database ---+
+ |   1|Alapadatok          |      5|      0| 132|            |Default Database|
+ |   2|Város törzs         |      2|      1|  42|            |Default Database|
+ |   3|Halfaj törzs        |      2|      2|  22|            |Default Database|
+ |   4|Halõr törzs         |      2|      2|  32|            |Default Database|
+ |   5|Horgász törzs       |      7|      2| 142|            |Default Database|
+ |   6|Horgászjegy törzs   |      4|      1|  16|            |Default Database|
+ |   7|Vízterület törzs    |      2|      2|  37|            |Default Database|
+ |   8|Fogási napló fej    |      4|      1|  47|            |Default Database|
+ |   9|Fogási napló sorok  |      1|      0|   0|            |Default Database|
+ |  10|Éves fogás összesítõ|      0|      0|   0|            |Default Database|
+ |  11|Éves fogás összesítõ|      0|      0|   0|            |Default Database|
+ +----+--------------------+-------+-------+----+------------+----------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Magic Software Enterprises Ltd                        M A G I C   Version  8.30
+
+ System : (FN)  Fogás napló                                     Date : 19/11/2017
+   Page :   2     Table Repository                              Time : 11:47:40
+
+ Table   1 : Alapadatok             Length :   132
+
++-#--+---- Column Name ---+Type+Attribute+----- Picture -----+---- Range -----+
+|   1|Egyesület neve      |   0|Alfa     |40A                |                |
+|   2|Irányítószám        |   5|Type:    |Irányítószám       |                |
+|   3|Város megnevezés    |   6|Type:    |Város megnevezés   |                |
+|   4|Utca megnevezés     |   7|Type:    |Utca megnevezés    |                |
+|   5|Ház szám            |   8|Type:    |Ház szám           |                |
++----+--------------------+----+---------+-------------------+----------------+
+
+
+ Table   2 : Város törzs            Length :    42
+
++-#--+---- Column Name ---+Type+Attribute+----- Picture -----+---- Range -----+
+|   1|Irányítószám        |   5|Type:    |Irányítószám       |                |
+|   2|Város megnevezés    |   6|Type:    |Város megnevezés   |                |
++----+--------------------+----+---------+-------------------+----------------+
+
+
+
+
++-#-+----Index Name -----+-- Type --+------- Column ---------+Size+- Order ---+
+|  1|Irányítószám szerint|Egyedi    |  1 Irányítószám        |   2|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+ Table   3 : Halfaj törzs           Length :    22
+
++-#--+---- Column Name ---+Type+Attribute+----- Picture -----+---- Range -----+
+|   1|Halfaj azonosító    |  18|Type:    |Halfaj azonosító   |                |
+|   2|Halfaj megnevezés   |  19|Type:    |Halfaj megnevezés  |                |
++----+--------------------+----+---------+-------------------+----------------+
+
+
+
+
++-#-+----Index Name -----+-- Type --+------- Column ---------+Size+- Order ---+
+|  1|Halfaj azonosytó sze|Egyedi    |  1 Halfaj azonosító    |   2|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+|  2|Halfaj megnevezés sz|Nem egyedi|  2 Halfaj megnevezés   |  20|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+ Table   4 : Halõr törzs            Length :    32
+
++-#--+---- Column Name ---+Type+Attribute+----- Picture -----+---- Range -----+
+|   1|Halõr azonosító     |  21|Type:    |Halõr azonosító    |                |
+|   2|Halõr megnevezés    |  22|Type:    |Halõr megnevezés   |                |
++----+--------------------+----+---------+-------------------+----------------+
+
+
+
+
++-#-+----Index Name -----+-- Type --+------- Column ---------+Size+- Order ---+
+|  1|Halõr azonosító szer|Egyedi    |  1 Halõr azonosító     |   2|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+|  2|Halõr neve szerint  |Nem egyedi|  2 Halõr megnevezés    |  30|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+
+Magic Software Enterprises Ltd                        M A G I C   Version  8.30
+
+ System : (FN)  Fogás napló                                     Date : 19/11/2017
+   Page :   3     Table Repository                              Time : 11:47:40
+
+ Table   5 : Horgász törzs          Length :   142
+
++-#--+---- Column Name ---+Type+Attribute+----- Picture -----+---- Range -----+
+|   1|Horgász azonosító   |   1|Type:    |Horgász azonosító  |                |
+|   2|Horgász megnevezés  |   2|Type:    |Horgász megnevezés |                |
+|   3|Születési dátum     |   3|Type:    |Születési dátum    |                |
+|   4|Anyja leánykori neve|   4|Type:    |Anyja leánykori nev|                |
+|   5|Irányítószám        |   5|Type:    |Irányítószám       |                |
+|   6|Utca megnevezés     |   7|Type:    |Utca megnevezés    |                |
+|   7|Ház szám            |   8|Type:    |Ház szám           |                |
++----+--------------------+----+---------+-------------------+----------------+
+
+
+
+
++-#-+----Index Name -----+-- Type --+------- Column ---------+Size+- Order ---+
+|  1|Horgász azonosító sz|Egyedi    |  1 Horgász azonosító   |   2|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+|  2|Horgász neve szerint|Nem egyedi|  2 Horgász megnevezés  |  40|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+ Table   6 : Horgászjegy törzs      Length :    16
+
++-#--+---- Column Name ---+Type+Attribute+----- Picture -----+---- Range -----+
+|   1|Horgászjegy kiváltás|   9|Type:    |Horgászjegy kiváltá|                |
+|   2|Horgászjegy sorszáma|  10|Type:    |Horgászjegy sorszám|                |
+|   3|Horgászjegy díja    |  11|Type:    |Horgászjegy díja   |                |
+|   4|Horgász készség szám|  12|Type:    |Horgász készség szá|1,2             |
++----+--------------------+----+---------+-------------------+----------------+
+
+
+
+
++-#-+----Index Name -----+-- Type --+------- Column ---------+Size+- Order ---+
+|  1|Kiv.év+sorszám szeri|Egyedi    |  1 Horgászjegy kiváltás|   8|Növekvõ    |
+|   |                    |          |  2 Horgászjegy sorszáma|   4|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+ Table   7 : Vízterület törzs       Length :    37
+
++-#--+---- Column Name ---+Type+Attribute+----- Picture -----+---- Range -----+
+|   1|Vízterület kósja    |  13|Type:    |Vízterület kósja   |                |
+|   2|Vízterület megnevezé|  14|Type:    |Vízterület megnevez|                |
++----+--------------------+----+---------+-------------------+----------------+
+
+
+
+
++-#-+----Index Name -----+-- Type --+------- Column ---------+Size+- Order ---+
+|  1|Vízterület kódja sze|Egyedi    |  1 Vízterület kósja    |   7|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+|  2|Vízterület neve szer|Egyedi    |  2 Vízterület megnevezé|  30|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+
+
+
+
+Magic Software Enterprises Ltd                        M A G I C   Version  8.30
+
+ System : (FN)  Fogás napló                                     Date : 19/11/2017
+   Page :   4     Table Repository                              Time : 11:47:40
+
+ Table   8 : Fogási napló fej       Length :    47
+
++-#--+---- Column Name ---+Type+Attribute+----- Picture -----+---- Range -----+
+|   1|FN.f.Horgászjegy kiv|   9|Type:    |Horgászjegy kiváltá|                |
+|   2|Horgász azonosító   |   1|Type:    |Horgász azonosító  |                |
+|   3|Vízterület kósja    |  13|Type:    |Vízterület kósja   |                |
+|   4|Horgászhely         |  15|Type:    |Horgászhely        |                |
++----+--------------------+----+---------+-------------------+----------------+
+
+
+
+
++-#-+----Index Name -----+-- Type --+------- Column ---------+Size+- Order ---+
+|  1|Kiváltás éve + horgá|Egyedi    |  1 FN.f.Horgászjegy kiv|   8|Növekvõ    |
+|   |                    |          |  2 Horgász azonosító   |   2|Növekvõ    |
++---+--------------------+----------+------------------------+----+-----------+
+ Table   9 : Fogási napló sorok     Length :     0
+
++-#--+---- Column Name ---+Type+Attribute+----- Picture -----+---- Range -----+
+|   1|                    |   0|Alfa     |                   |                |
++----+--------------------+----+---------+-------------------+----------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
