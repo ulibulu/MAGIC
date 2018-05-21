@@ -1,0 +1,2 @@
+# MAGIC
+Magic  elosztott alkalmazás
